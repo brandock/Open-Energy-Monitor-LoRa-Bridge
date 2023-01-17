@@ -16,7 +16,7 @@ I did this using three Moteinos.
 
 I found it easiest to wire the serial connection between Moteino 1 and Moteino 2 by flipping the former belly-up (radio side up). I used right angle headers and some protoboard. 
 
-There are three sketches needed.
+There are three sketches needed, and the USB interfacer (Moteino 3) needs to be added to the emonHub configuration file (emonCMS > Setup > emonHub > Edit Config > add the entry shown in this respository.)
 
 Moteino 1: **RFM69Pi2Serial**. RFM69Pi receiver to serial. I used the RFM69Pi firmware sketch and modified the serial baud from 38400 to 115200.<br>
 Moteino 2: **Serial2LoRa**. Serial to LoRa. I used the rf95_client example in the RadioHead Examples folder and changed the outbound "Hello World" in the example to the serial input.<br>
