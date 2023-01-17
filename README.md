@@ -1,6 +1,6 @@
 # Open-Energy-Monitor-LoRa-Bridge
 
-My father is using Open Energy Monitor to monitor a heat pump in his new machine shop. There's no internet access in the shop, so he was taking his laptop out there periodically and downloading the emonCMS data via browser. I wanted to set up a relay for him so that the Pi base station could be in his house. It would go: OEM sensors in shop --> Moteino with RFM69CW in the shop<----->Moteino with LoRa in the shop<-----> Moteino with LoRa in the house ---> OEM base station. I think of this as a "relay". 
+My father is using Open Energy Monitor to monitor a heat pump in his new machine shop. There's no internet access in the shop, so he was taking his laptop out there periodically and downloading the emonCMS data via browser. I wanted to set up a relay for him so that the Pi base station could be in his house. It would go: OEM sensors in shop --> Moteino with RFM69CW in the shop<----->Moteino with LoRa in the shop<-----> Moteino with LoRa in the house ---> OEM base station. I think of this as a "relay", but maybe the better word is "bridge".  
 
 ![scheme](https://user-images.githubusercontent.com/17953028/212793142-f43c6f35-0e1f-4bd8-a04c-65432b14b4fb.jpg)
 
