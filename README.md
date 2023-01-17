@@ -9,18 +9,18 @@ It works! The shop is about 70 meters from the house with some other building in
 
 I did this using three Moteinos.
 
-Moteino 1: RFM69 radio receiving packets and repeating them via serial, similar to the receiver used with the Pi Gateway (or in this case, more similar to RFM69Pi from OEM).<br>
-Moteino 2: LoRa radio. Listens to serial packets and repeats them via the radio.<br>
-Moteino 3: LoRa radio. Receives packets via LoRa and repeats them via serial. Essentially an RFM2Pi.<br>
+**Moteino 1**: RFM69 radio receiving packets and repeating them via serial, similar to the receiver used with the Pi Gateway (or in this case, more similar to RFM69Pi from OEM).<br>
+**Moteino 2**: LoRa radio. Listens to serial packets and repeats them via the radio.<br>
+**Moteino 3**: LoRa radio. Receives packets via LoRa and repeats them via serial. Essentially an RFM2Pi.<br>
 
 
 I found it easiest to wire the serial connection between Moteino 1 and Moteino 2 by flipping the former belly-up (radio side up). I used right angle headers and some protoboard. 
 
 There are three sketches needed.
 
-Moteino 1: RFM69Pi2Serial. RFM69Pi receiver to serial. I used the RFM69Pi firmware sketch and modified the serial baud from 38400 to 115200.<br>
-Moteino 2: Serial2LoRa. Serial to LoRa. I used the rf95_client example in the RadioHead Examples folder and changed the outbound "Hello World" in the example to the serial input.<br>
-Moteino 3: RF95LoRa2Pi. LoRa to Pi gateay. I used the RFM69Pi firmware sketch again, but replaced the JeeLib radio library with the RH library.<br>
+Moteino 1: **RFM69Pi2Serial**. RFM69Pi receiver to serial. I used the RFM69Pi firmware sketch and modified the serial baud from 38400 to 115200.<br>
+Moteino 2: **Serial2LoRa**. Serial to LoRa. I used the rf95_client example in the RadioHead Examples folder and changed the outbound "Hello World" in the example to the serial input.<br>
+Moteino 3: **RF95LoRa2Pi**. LoRa to Pi gateay. I used the RFM69Pi firmware sketch again, but replaced the JeeLib radio library with the RH library.<br>
 
 ![relay1](https://user-images.githubusercontent.com/17953028/212793158-fc3318d3-2eb6-4ba3-a39c-a1e01b48fa8c.jpg)
 ![base](https://user-images.githubusercontent.com/17953028/212793296-70c13b17-f72c-4c54-92ad-d03a4d824250.jpg)
