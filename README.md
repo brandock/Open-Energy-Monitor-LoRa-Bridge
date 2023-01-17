@@ -2,7 +2,10 @@
 
 My father is using Open Energy Monitor to monitor a heat pump in his new machine shop. There's no internet access in the shop, so he was taking his laptop out there periodically and downloading the emonCMS data via browser. I'd wanted to set up a relay for him so that the Pi base station could be in his house. It would go: OEM sensors in shop --> Moteino with RFM69CW in the shop<----->Moteino with LoRa in the shop<-----> Moteino with LoRa in the house ---> OEM base station. I think of this as a "relay". 
 
+![scheme](https://user-images.githubusercontent.com/17953028/212793142-f43c6f35-0e1f-4bd8-a04c-65432b14b4fb.jpg)
+
 It works! The shop is about 70 meters from the house with some other building in between. The packets are arriving as expected in the house for over a month now.
+![map](https://user-images.githubusercontent.com/17953028/212793119-a436af30-64d8-4e7a-918c-144504f75a62.jpg)
 
 I did this using three Moteinos.
 
@@ -18,3 +21,7 @@ There are three sketches needed.
 Moteino 1: RFM69Pi2Serial. RFM69Pi receiver to serial. I used the RFM69Pi firmware sketch and modified the serial baud from 38400 to 115200.<br>
 Moteino 2: Serial2LoRa. Serial to LoRa. I used the rf95_client example in the RadioHead Examples folder and changed the outbound "Hello World" in the example to the serial input.<br>
 Moteino 3: RF95LoRa2Pi. LoRa to Pi gateay. I used the RFM69Pi firmware sketch again, but replaced the JeeLib radio library with the RH library.<br>
+
+![relay1](https://user-images.githubusercontent.com/17953028/212793158-fc3318d3-2eb6-4ba3-a39c-a1e01b48fa8c.jpg)
+![base](https://user-images.githubusercontent.com/17953028/212793296-70c13b17-f72c-4c54-92ad-d03a4d824250.jpg)
+
