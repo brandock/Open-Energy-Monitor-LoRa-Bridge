@@ -1,0 +1,11 @@
+### Add this entry to emonHub. emonCMS > Setup > emonHub > Edit Config > add the text below > save.
+
+### This interfacer manages the USB port where the Moteino base is communicating serial data
+[[SerialDirect]]
+     Type = EmonHubSerialInterfacer
+      [[[init_settings]]]
+           com_port = /dev/ttyUSB0 
+           com_baud = 115200
+      [[[runtimesettings]]]
+           pubchannels = ToEmonCMS,
+           subchannels = ToRFM12,
