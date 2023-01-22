@@ -2,7 +2,7 @@
 
 ### This interfacer manages the USB port where the Moteino base is communicating serial data
 [[SerialDirect]]
-     Type = EmonHubSerialInterfacer
+     Type = Type = EmonHubJeeInterfacer
       [[[init_settings]]]
            com_port = /dev/ttyUSB0 
            com_baud = 115200
