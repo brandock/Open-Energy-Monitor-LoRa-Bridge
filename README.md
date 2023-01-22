@@ -8,6 +8,7 @@ It works! The shop is about 70 meters from the house with some other building in
 ![map](https://user-images.githubusercontent.com/17953028/212793119-a436af30-64d8-4e7a-918c-144504f75a62.jpg)
 
 I did this using three Moteinos.
+![LoRa Bridge](https://user-images.githubusercontent.com/17953028/213946740-c6d2ad57-546d-475c-8f94-bcc7c9d5ef4b.jpg)
 
 **Moteino 1**: RFM69 radio receiving packets and repeating them via serial, similar to the receiver used with the Pi Gateway (or in this case, more similar to RFM69Pi from OEM).<br>
 **Moteino 2**: LoRa radio. Listens to serial packets and repeats them via the radio.<br>
