@@ -15,10 +15,22 @@ updated to repeat any inbound radio packets as an outbound serial in the Moteino
 #include <SPI.h>
 #include <RH_RF95.h>
 
+#ifdef __AVR_ATmega1284P__
+  #define LED           15 // Moteino MEGAs have LEDs on D15
+  #define FLASH_SS      23 // and FLASH SS on D23
+#else
+  #define LED           9 // Moteinos have LEDs on D9
+  #define FLASH_SS      8 // and FLASH SS on D8
+#endif
+
 // Singleton instance of the radio driver
+#ifdef __AVR_ATmega1284P__
+RH_RF95 rf95(4); //SPI CS init with MoteinoMEGA
+#else
 RH_RF95 rf95;
 //RH_RF95 rf95(5, 2); // Rocket Scream Mini Ultra Pro with the RFM95W
 //RH_RF95 rf95(8, 3); // Adafruit Feather M0 with RFM95 
+#endif
 
 // Need this on Arduino Zero with SerialUSB port (eg RocketScream Mini Ultra Pro)
 //#define Serial SerialUSB
