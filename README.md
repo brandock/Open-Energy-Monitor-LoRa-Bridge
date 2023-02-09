@@ -23,6 +23,10 @@ Moteino 1: **RFM69Pi2Serial**. RFM69Pi receiver to serial. I used the RFM69Pi fi
 Moteino 2: **Serial2LoRa**. Serial to LoRa. I used the rf95_client example in the RadioHead Examples folder and changed the outbound "Hello World" in the example to the serial input.<br>
 Moteino 3: **RF95LoRa2Pi**. LoRa to Pi gateay. I used the RFM69Pi firmware sketch again, but replaced the JeeLib radio library with the RH library.<br>
 
-![relay1(2)](https://user-images.githubusercontent.com/17953028/212795986-c54e023e-06b4-48e9-b1fc-2f2558125211.jpg)
-![base](https://user-images.githubusercontent.com/17953028/212793296-70c13b17-f72c-4c54-92ad-d03a4d824250.jpg)
+![IMG_0872](https://user-images.githubusercontent.com/17953028/217689758-0bbb0e3f-32e4-415f-87c6-c0fdf89cda81.JPG)
 
+![IMG_0870](https://user-images.githubusercontent.com/17953028/217689912-de2c6df8-d6a1-4eed-b354-edddaba1ba13.JPG)
+
+![IMG_0891](https://user-images.githubusercontent.com/17953028/217689802-77bba691-d4d8-477e-b506-1325b928bce0.JPG)
+
+![IMG_0896](https://user-images.githubusercontent.com/17953028/217689987-6d8babdd-d0f6-4a27-999f-0ad99b23d033.JPG)
