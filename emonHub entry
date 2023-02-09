@@ -1,7 +1,7 @@
 ### Add this entry to emonHub. emonCMS > Setup > emonHub > Edit Config > add the text below > save.
 
 ### This interfacer manages the USB port where the Moteino base is communicating serial data
-[[SerialDirect]]
+[[MoteinoUSB]]
      Type = Type = EmonHubJeeInterfacer
       [[[init_settings]]]
            com_port = /dev/ttyUSB0 
