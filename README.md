@@ -29,4 +29,5 @@ Moteino 3: **RF95LoRa2Pi**. LoRa to Pi gateay. I used the RFM69Pi firmware sketc
 
 ![IMG_0891](https://user-images.githubusercontent.com/17953028/217689802-77bba691-d4d8-477e-b506-1325b928bce0.JPG)
 
-![IMG_0896](https://user-images.githubusercontent.com/17953028/217689987-6d8babdd-d0f6-4a27-999f-0ad99b23d033.JPG)
+![IMG_0896](https://user-images.githubusercontent.com/17953028/217690143-d9bf8a8d-3ef3-4cd5-b302-2d13efe9e673.JPG)
+
