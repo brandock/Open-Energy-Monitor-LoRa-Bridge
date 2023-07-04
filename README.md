@@ -25,7 +25,8 @@ Moteino 2: **Serial2LoRa**. Serial to LoRa. I used the rf95_client example in th
 Moteino 3: **RF95LoRa2Pi**. LoRa to Pi gateay. I used the RFM69Pi firmware sketch again, but replaced the JeeLib radio library with the RH library.<br>
 
 # EmonHub Configuration
-The USB interfacer (Moteino 3) needs to be added to the emonHub configuration file (emonCMS > Setup > emonHub > Edit Config > add the following entry (also included in this repository).
+The USB interfacer (Moteino 3) needs to be added to the emonHub configuration file (emonCMS > Setup > emonHub > Edit Config > add the following entry (also included in this repository). The com_port setting shown here is an educated guess. To find the actual address assigned you can use the dmesg command and look for your device.
+Another educated guess would be /dev/ttyACM0.
 
 <code>
 [[MoteinoUSB]]
